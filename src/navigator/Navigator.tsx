@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import PokemonScreen from '../screens/PokemonScreen';
 import HomeScreen from '../screens/HomeScreen';
 import { SimplePokemon } from '../interfaces/pokemonInterfaces';
+import { StatusBar } from 'expo-status-bar';
 
 export type RootStackParams = {
     HomeScreen: undefined,
@@ -18,9 +19,6 @@ export const Navigator = () => {
             screenOptions={
                 {
                     headerShown: false,
-                    cardStyle: {
-                        backgroundColor: 'white',
-                    }
                 }
             }
         >

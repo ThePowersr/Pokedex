@@ -20,7 +20,7 @@ const PokemonDetails = ({ pokemon }: Props) => {
         >
             <View style={{
                 ...styles.container,
-                marginTop: 370
+                marginTop: 370,
             }}>
                 {/* <Text style={styles.title}>Types</Text>
                 <View style={{ flexDirection: 'column', width: 100, alignItems: 'center' }}>
@@ -114,7 +114,7 @@ const PokemonDetails = ({ pokemon }: Props) => {
                 </ScrollView>
             </View>
 
-            <View style={{ alignItems: 'center', marginVertical: 20 }}>
+            <View style={{ alignItems: 'center', marginVertical: 20, marginBottom: 90 }}>
                 <FadeInImage
                     uri={pokemon.sprites.front_default}
                     style={styles.basicSprite}
